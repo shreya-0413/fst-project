@@ -1,0 +1,250 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f3e2e2;
+} 
+
+header {
+  background-color: #033047;
+  color: #ebe1e1;
+  padding: 20px;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #e2bc83;
+  text-decoration: underline;
+}
+
+nav ul li a:hover {
+  color: rgb(245, 244, 239);
+}
+
+.btn-box{
+  width: 30%;
+  height: 20%;
+  display: flex;
+  gap:2rem;
+  padding: 2rem;
+  font-weight: bolder;
+}
+
+.btn-1 {
+  padding: 15px 28px;
+  background-color: #151616;
+  color: white;
+  border: 2px solid transparent;
+  border-radius: 8%;
+}
+
+.btn-1:hover{
+  background-color: #d6cbcb;
+  color: #0e0d0d;
+  border: 2px solid black;
+}
+
+.btn-2{
+  padding: 15px 28px;
+  background-color:  #151616;
+  color: white;
+  border: 2px solid transparent;
+  border-radius: 8%;
+}
+
+.btn-2:hover{
+  background-color: #d6cbcb;
+  color:  #0e0d0d;
+  border: 2px solid black;
+}
+
+section {
+  display: flex; 
+  align-items: center;
+  font-family: "arial", sans-serif;
+  font-size: 17px;
+  text-align: justify;
+  line-height: 1.5;
+  margin: 20px;
+  color: #5c677d;
+  padding: 2rem;
+}
+
+h1 {
+  margin: 0 0 1rem 0;
+  font-size: xx-large;
+}
+
+.skills{
+  background-color:  rgb(194, 178, 162);
+  display: flex;
+  width: 91%;
+  height: 20em;
+  padding: 3%;
+  border-radius: 40px;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+
+}
+.skills-info{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 2rem;
+
+}
+.skills-info h1{
+  font-size: 3rem;
+  margin: 0;
+}
+.skills-info p{
+  color: white;
+  opacity: 0.7;
+}
+.my-skills{
+  display: flex;
+  text-align: left;
+  gap: 10em;
+
+}
+.my-skills ul{
+  font-size: 1.2em;
+  font-weight: flex;
+  flex-direction: column;
+  color: white;
+  opacity: 0.8;
+  align-items: baseline;
+}
+.my-skills ul li:hover{
+  color: #033047;
+  cursor: pointer;
+  transform: translateX(8px);
+}
+.skills h2 span{
+  display: flex;
+  gap: 0.5em;
+  font-size: 1.2em;
+  transition: 0.3s ease-in-out;
+}
+
+#contact{
+  background-color : var(--second-background);
+  justify-content: center;
+}  
+.cont-head{
+  font-weight: 600;
+  font-size:30px;
+  margin-bottom: 5px;
+  text-decoration: underline;
+
+}
+form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap:1em;
+}
+form .input-box{
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+.input-box span{
+font-size: 1.3em;
+
+}
+form input{
+  font-size: 1em;
+  padding: 1em 5em;
+  border-radius: 50px;
+  outline: none;
+  border-color: #e9dfd1;
+}
+
+form input:focus{
+  background: #0f0f0f;
+  color: #ebe1e1;
+}
+
+
+
+.d-btn {
+  background: black;
+  margin: 32px;
+  padding: 10px 15px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #e6c4a4;
+  display: inline-block;
+  border-radius: 5px;
+}
+
+.d-btn:hover{
+  background: rgb(219, 223, 226);
+  border-color: #0d0d0d;
+
+  color: #033047;
+}
+#about a:hover{
+  background: #012035;
+  color: rgb(218, 205, 205);
+  border:2px solid #0d0d0d;
+}
+
+.hover-heading {
+  margin: 50px;
+  padding: 2%;
+  color: rgb(148, 78, 13);
+  transition: color 0.3s;
+}
+
+.hover-heading:hover {
+  color: rgb(211, 178, 151);
+  text-decoration: underline;
+}
+
+.round-image {
+  width: 300px;
+  height: 400px;
+  border-radius: 50%; /* This makes it round */
+  object-fit: cover; /* Ensures the image fits within the circle */
+  display: block;
+  float: right;
+  overflow: hidden;
+  margin-right: 20px; /* Centers the image */
+  padding: 8vh;
+}
+.clear {
+  clear: both;
+}
+
+footer {
+  background-color:  #033047;
+  color: #e6c4a4;
+  text-align: center;
+  padding: 10px;
+  position: absolute;
+  bottom: 10;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  nav ul li {
+    display: block;
+    margin: 0.5rem 0;
+  }
+}
